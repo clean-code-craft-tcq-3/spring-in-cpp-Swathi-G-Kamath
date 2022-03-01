@@ -1,6 +1,6 @@
 #include <vector>
 
-Struct Stats
+struct Stats
 {
     float average,max,min;
 };
