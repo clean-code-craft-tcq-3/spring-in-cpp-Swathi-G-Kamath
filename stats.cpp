@@ -46,7 +46,7 @@ StatsAlerter::StatsAlerter(float f , std::vector<IAlerter*>& ia)
     :max(f) , al(ia)
 {}
 
-void StatsAlerter::checkAndAlert(std::vector<float>& n)
+void StatsAlerter::checkAndAlert(const std::vector<float>& n)
 {
     for (auto i : n)
     {
