@@ -42,11 +42,11 @@ void LEDAlert::SetAlert()
     this->ledGlows = true; 
 }
 
-StatsAlerter::StatsAlerter(float f , std::vector<IAlerter*>& i)
-    :max(m) , alerter(al)
+StatsAlerter::StatsAlerter(float f , std::vector<IAlerter*>& ia)
+    :max(f) , alerter(ia)
 {}
 
-void StatsAlerter::checkAndAlert(const std::vector<float>& n)
+void StatsAlerter::checkAndAlert(std::vector<float>& n)
 {
     for (auto i : n)
     {
