@@ -37,6 +37,6 @@ class StatsAlerter
     std::vector<IAlerter*> al;
     
   public:
-     StatsAlerter(float , std::vector<IAlerter*>& );
-     void checkAndAlert(std::vector<float>& );
+     StatsAlerter(float ,std::vector<IAlerter*>& );
+     void checkAndAlert(const std::vector<float>& );
 };
