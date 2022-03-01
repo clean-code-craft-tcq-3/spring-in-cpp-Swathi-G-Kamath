@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <cmath>
 
-struct Stats Statistics::ComputeStatistics(const std::vector<float>& num) {
+Stats Statistics::ComputeStatistics(const std::vector<float>& num) {
     
     /*Creation of Stats object*/
     Stats stat1;
