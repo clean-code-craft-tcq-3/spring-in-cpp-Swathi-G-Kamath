@@ -43,7 +43,7 @@ void LEDAlert::SetAlert()
 }
 
 StatsAlerter::StatsAlerter(float f , std::vector<IAlerter*>& ia)
-    :max(f) , alerter(ia)
+    :max(f) , al(ia)
 {}
 
 void StatsAlerter::checkAndAlert(std::vector<float>& n)
@@ -52,9 +52,9 @@ void StatsAlerter::checkAndAlert(std::vector<float>& n)
     {
         if (i > max)
         { 
-            for (int j = 0; j < alerter.size(); ++j)
+            for (int j = 0; j < al.size(); ++j)
             {
-                this->alerter.at(j)->SetAlert();
+                this->al.at(j)->SetAlert();
             }
             break;
         }
