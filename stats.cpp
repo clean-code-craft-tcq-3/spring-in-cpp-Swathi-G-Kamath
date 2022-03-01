@@ -11,7 +11,7 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& num) {
     {
         for(auto i:num)
         {
-            stat1.average+-i;
+            stat1.average+=i;
         }
     
         stat1.average=stat1.average/num.size();
