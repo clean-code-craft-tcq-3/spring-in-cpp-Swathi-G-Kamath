@@ -15,7 +15,7 @@ class IAlerter
         virtual void SetAlert()=0;
 };
 
-class EmailAlert:: public IAlerter
+class EmailAlert::public IAlerter
 {
  public:
     bool emailSent;
@@ -23,7 +23,7 @@ class EmailAlert:: public IAlerter
     void SetAlert();    
 };
 
-class LEDAlert :: public IAlerter
+class LEDAlert::public IAlerter
 {
  public:
     bool ledGlows;
